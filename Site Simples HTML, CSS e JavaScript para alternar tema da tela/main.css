@@ -1,0 +1,71 @@
+body{
+    font-family: monospace;
+
+}
+
+ul {
+    font-family: Helvetica;
+
+}
+
+li {
+    list-style: circle;
+    }
+    
+    .list {
+    list-style: square;
+    }
+
+        :root {
+            --green: #00FF00;
+            --white: #fff;
+            --black: #000;
+        }
+
+        .light-theme {
+            --bg: var(--green);
+            --fontColor: var(--black);
+            --btnBg: var(--black);
+            --btnFontColor: var(--white);
+             }
+ 
+        .dark-theme {
+            --bg: var(--black);
+            --fontColor: var(--green);
+            --btnBg: var(--white);
+            --btnFontColor: var(--black);
+             }
+
+         body {
+                background: var(--bg);
+                color: var(--fontColor);
+
+            }
+        
+        .btn {
+            position: absolute;     /* Posiciona o elemento de forma absoluta em relação ao contêiner pai posicionado */
+            top: 20px;              /* Define a distância de 20px do topo do contêiner pai */
+            left: 250px;            /* Define a distância de 250px da borda esquerda do contêiner pai */
+            height: 50px;           /* Define a altura do elemento como 50 pixels */
+            width: 50px;            /* Define a largura do elemento como 50 pixels */
+            border-radius: 50%;     /* Arredonda as bordas, transformando o elemento em um círculo */
+            border: none;           /* Remove qualquer borda visível do elemento */
+            color: var(--btnFontColor);
+            background-color: var(--btnBg);
+        }
+        .btn:focus {outline: none;} /*Define o destaque do botão ao passar o cursor nele*/
+
+       
+
+        
+
+
+
+    /*
+    # USADO PARA ID
+    . USADO PARA CLASSE
+    :root REPRESENTA O ELEMENTO HTML, SERIAM VARIÁVEIS GLOBAIS
+    bg BACKGROUND
+    var VARIAVEL
+    --... ESTÁ SENDO OS NOMES DAS VARIÁVEIS
+    */
